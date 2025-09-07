@@ -1,0 +1,36 @@
+# Test Configuration File
+browser: chrome
+headless: false
+implicitWait: 10
+explicitWait: 20
+pageLoadTimeout: 30
+baseUrl: "https://www.google.com"
+screenshotOnFailure: true
+videoRecording: false
+
+# Browser specific settings
+chrome:
+  options:
+    - "--no-sandbox"
+    - "--disable-dev-shm-usage"
+    - "--disable-gpu"
+    - "--window-size=1920,1080"
+
+firefox:
+  options:
+    - "--width=1920"
+    - "--height=1080"
+
+# Test data paths
+testData:
+  users: "src/test/resources/data/users.json"
+  testCases: "src/test/resources/data/test-cases.json"
+
+# Reporting settings
+reporting:
+  allure:
+    enabled: true
+    resultsDirectory: "target/allure-results"
+  screenshots:
+    enabled: true
+    directory: "target/screenshots"

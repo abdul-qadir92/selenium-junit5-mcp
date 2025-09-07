@@ -1,0 +1,76 @@
+{
+  "searchTestCases": [
+    {
+      "testName": "Basic Search Test",
+      "searchTerm": "Selenium WebDriver",
+      "expectedResults": true,
+      "description": "Test basic search functionality"
+    },
+    {
+      "testName": "Empty Search Test",
+      "searchTerm": "",
+      "expectedResults": false,
+      "description": "Test search with empty string"
+    },
+    {
+      "testName": "Special Characters Search",
+      "searchTerm": "!@#$%^&*()",
+      "expectedResults": true,
+      "description": "Test search with special characters"
+    },
+    {
+      "testName": "Long Search Term",
+      "searchTerm": "This is a very long search term that should test the search functionality with a lot of text",
+      "expectedResults": true,
+      "description": "Test search with very long text"
+    },
+    {
+      "testName": "Numbers Search",
+      "searchTerm": "123456789",
+      "expectedResults": true,
+      "description": "Test search with numbers only"
+    }
+  ],
+  "homepageTestCases": [
+    {
+      "testName": "Logo Display Test",
+      "element": "googleLogo",
+      "shouldBeVisible": true,
+      "description": "Verify Google logo is displayed"
+    },
+    {
+      "testName": "Search Box Display Test",
+      "element": "searchBox",
+      "shouldBeVisible": true,
+      "description": "Verify search box is displayed"
+    },
+    {
+      "testName": "Search Button Display Test",
+      "element": "searchButton",
+      "shouldBeVisible": true,
+      "description": "Verify search button is displayed"
+    }
+  ],
+  "browserTestCases": [
+    {
+      "browser": "chrome",
+      "headless": false,
+      "description": "Chrome browser test"
+    },
+    {
+      "browser": "chrome",
+      "headless": true,
+      "description": "Chrome headless test"
+    },
+    {
+      "browser": "firefox",
+      "headless": false,
+      "description": "Firefox browser test"
+    },
+    {
+      "browser": "edge",
+      "headless": false,
+      "description": "Edge browser test"
+    }
+  ]
+}

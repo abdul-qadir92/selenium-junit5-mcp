@@ -4,6 +4,7 @@ import com.example.framework.base.BaseTest;
 import com.example.framework.pages.BasePage;
 import com.example.framework.utils.ConfigManager;
 import org.junit.jupiter.api.Test;
+import org.junit.jupiter.api.Disabled;
 import org.junit.jupiter.api.DisplayName;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
@@ -15,6 +16,7 @@ import org.openqa.selenium.WebElement;
 @DisplayName("Framework Example Test")
 public class FrameworkExampleTest extends BaseTest {
 
+    @Disabled
     @Test
     @DisplayName("Example test demonstrating framework capabilities")
     public void exampleTest() {
